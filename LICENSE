@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2026 Project contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Third-party scope notice (not a modification of the MIT terms above)
+------------------------------------------------------------------
+The MIT grant applies to original project code and documentation for which
+the project contributors hold the relevant rights. It does not relicense
+third-party dependencies, copied upstream code, pretrained weights, datasets,
+input videos, or other third-party assets.
+
+The Ultralytics library, pretrained YOLO models, and the BYTETracker
+implementation selected by this project retain their applicable AGPL-3.0
+or separately obtained commercial license terms.
+See https://www.ultralytics.com/license and the exact installed version.
+
+The original upstream ByteTrack repository identifies an MIT license.
+That license is distinct from the Ultralytics implementation used here.
+If upstream code is copied or redistributed, preserve its own copyright
+and license notices.
+See https://github.com/FoundationVision/ByteTrack/blob/main/LICENSE.
+
+Other dependencies retain their respective licenses. Preserve required
+notices when distributing them. Challenge and downloaded videos retain
+their owners' rights; this grant does not authorize their redistribution.
+Consult the dependency licenses and source/provenance records.
+
+MIT licensing of original code does not remove obligations arising from
+third-party components in a combined application. Private repository
+visibility does not replace those terms.

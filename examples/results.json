@@ -1,0 +1,119 @@
+{
+  "hardware": "Intel Core i7-6820HQ CPU",
+  "timing": "Frame loop including output writing; initialization and scene estimation excluded. Workstation load varied.",
+  "evaluation": {
+    "annotations": "AI-assisted source-frame inspection; not independently reviewed",
+    "matching": "Class-agnostic IoU >= 0.5",
+    "minimum_box_height_px": 35,
+    "coverage": "Sampled frames only; extended highway selection is positive-enriched",
+    "ground_truth_3d": false
+  },
+  "challenge_latency_ms": {
+    "median": 137.53529987297952,
+    "p95": 242.69850992131978
+  },
+  "challenge_accepted_cuboid_fraction": 0.6861451460885957,
+  "runs": [
+    {
+      "sequence": "challenge",
+      "processed_frames": 743,
+      "processing_fps": 6.6045,
+      "annotated_frames": 8,
+      "labeled_observations": 27,
+      "detections": {
+        "tp": 22,
+        "fp": 2,
+        "fn": 5,
+        "precision": 0.9166666666666666,
+        "recall": 0.8148148148148148
+      },
+      "tracks": {
+        "tp": 18,
+        "fp": 1,
+        "fn": 9,
+        "precision": 0.9473684210526315,
+        "recall": 0.6666666666666666
+      },
+      "sampled_idf1": 0.6086956521739131,
+      "observed_id_switches": 4,
+      "accepted_cuboid_instances": 1456
+    },
+    {
+      "sequence": "bus",
+      "processed_frames": 150,
+      "processing_fps": 6.9562,
+      "annotated_frames": 10,
+      "labeled_observations": 26,
+      "detections": {
+        "tp": 16,
+        "fp": 6,
+        "fn": 10,
+        "precision": 0.7272727272727273,
+        "recall": 0.6153846153846154
+      },
+      "tracks": {
+        "tp": 7,
+        "fp": 1,
+        "fn": 19,
+        "precision": 0.875,
+        "recall": 0.2692307692307692
+      },
+      "sampled_idf1": 0.4117647058823529,
+      "observed_id_switches": 0,
+      "accepted_cuboid_instances": 130
+    },
+    {
+      "sequence": "highway",
+      "processed_frames": 300,
+      "processing_fps": 7.1314,
+      "annotated_frames": 10,
+      "labeled_observations": 1,
+      "detections": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0
+      },
+      "tracks": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0
+      },
+      "sampled_idf1": 0.0,
+      "observed_id_switches": 0,
+      "accepted_cuboid_instances": 0
+    },
+    {
+      "sequence": "highway_extended",
+      "processed_frames": 1000,
+      "processing_fps": 8.6127,
+      "annotated_frames": 10,
+      "labeled_observations": 10,
+      "detections": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8
+      },
+      "tracks": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 6,
+        "precision": 1.0,
+        "recall": 0.4
+      },
+      "sampled_idf1": 0.5714285714285714,
+      "observed_id_switches": 0,
+      "accepted_cuboid_instances": 0
+    }
+  ],
+  "limitations": [
+    "No real-time result on tested CPU; GPU untested.",
+    "Cuboid acceptance is not 3D accuracy.",
+    "Moving-camera stress clips violate the fixed-camera model."
+  ]
+}

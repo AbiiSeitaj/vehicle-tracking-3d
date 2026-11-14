@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "source_video": "scripts/validation_samples/highway.mp4",
+  "source_video_sha256": "834941f881b6f736f60340d891d99f0bf69c85fc742b852dad2c97cb81a21fe2",
+  "source_original_sha256": "19929592227c8062c39fcf6025d01f8f3cd20134b91a71b23f2c6dd34ae29d52",
+  "source_provenance": "scripts/validation_samples/highway.provenance.json",
+  "image_size": [
+    1280,
+    1047
+  ],
+  "exhaustive_objects": true,
+  "exhaustive_visible_selected_objects": true,
+  "selection": {
+    "min_height_px": 35,
+    "definition": "Visible vehicle boxes at least 35 pixels tall; stationary, occluded and truncated vehicles included. No ignored regions."
+  },
+  "matching": "class-agnostic vehicle IoU >=0.5",
+  "tracking_scope": "Observed identities on sampled frames only.",
+  "annotation_provenance": {
+    "annotator": "Codex visual inspection (AI-assisted), 2026-10-09",
+    "method": "Source-only frames decoded sequentially; detector predictions were not used for labeling.",
+    "frame_index_definition": "Zero-based successful sequential reads, not seek positions.",
+    "bbox_convention": "Visible [x1,y1,x2,y2] extents, clipped to the image; shadows excluded.",
+    "extracted_frames": [
+      615,
+      660,
+      675,
+      690,
+      705,
+      720,
+      735,
+      750,
+      765,
+      990
+    ],
+    "identity_policy": "One overtaking trajectory and two separate oncoming cars.",
+    "limitations": [
+      "Positive-enriched selection, not a random sample; keep scores separate.",
+      "Sparse AI-assisted labels; not independently reviewed.",
+      "Visible box extents and height cutoff are approximate; no 3D ground truth.",
+      "Low-resolution moving-camera footage."
+    ],
+    "source_native_size": [
+      176,
+      144
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 615,
+      "objects": [
+        {
+          "id": "oncoming_car_2",
+          "bbox": [
+            0,
+            706,
+            88,
+            759
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 660,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            0,
+            696,
+            174,
+            980
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 675,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            190,
+            706,
+            446,
+            890
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 690,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            417,
+            721,
+            547,
+            844
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "oncoming_car_3",
+          "bbox": [
+            0,
+            696,
+            62,
+            754
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 705,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            505,
+            739,
+            600,
+            826
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 720,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            555,
+            747,
+            629,
+            813
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 735,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            588,
+            750,
+            649,
+            801
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 750,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            603,
+            752,
+            656,
+            794
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 765,
+      "objects": [
+        {
+          "id": "overtaking_car_1",
+          "bbox": [
+            608,
+            756,
+            655,
+            793
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 990,
+      "objects": []
+    }
+  ]
+}

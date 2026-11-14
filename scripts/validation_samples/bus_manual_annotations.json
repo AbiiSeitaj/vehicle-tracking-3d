@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "source_video": "scripts/validation_samples/bus.mp4",
+  "source_original_sha256": "08f557aade483465fca3ad9f5ce9a5b6aad7e833c871ec969b5b8fbb0a791c87",
+  "source_provenance": "scripts/validation_samples/bus.provenance.json",
+  "image_size": [
+    1280,
+    1047
+  ],
+  "exhaustive_objects": true,
+  "exhaustive_visible_selected_objects": true,
+  "selection": {
+    "min_height_px": 35,
+    "definition": "Visible vehicle boxes at least 35 pixels tall; stationary, occluded and truncated vehicles included. No ignored regions."
+  },
+  "matching": "class-agnostic vehicle IoU >=0.5",
+  "tracking_scope": "Observed identities on sampled frames only.",
+  "annotation_provenance": {
+    "annotator": "Codex visual inspection (AI-assisted), 2026-10-09",
+    "method": "Source-only frames decoded sequentially; detector predictions were not used for labeling.",
+    "frame_index_definition": "Zero-based successful sequential reads, not seek positions.",
+    "bbox_convention": "Visible [x1,y1,x2,y2] extents, clipped to the image; shadows excluded.",
+    "extracted_frames": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135
+    ],
+    "identity_policy": "Same visible bus, cars and van across sampled frames.",
+    "limitations": [
+      "Sparse AI-assisted labels; not independently reviewed.",
+      "Visible box extents and height cutoff are approximate; no 3D ground truth.",
+      "Low-resolution moving-camera footage."
+    ],
+    "source_native_size": [
+      352,
+      288
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 0,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            275,
+            268,
+            1280,
+            538
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            0,
+            609,
+            916,
+            1047
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 15,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            245,
+            298,
+            1280,
+            697
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            0,
+            580,
+            1245,
+            1047
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 30,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            210,
+            320,
+            1280,
+            722
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            201,
+            593,
+            1280,
+            1024
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 45,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            183,
+            344,
+            1280,
+            727
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            441,
+            593,
+            1280,
+            980
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            0,
+            705,
+            137,
+            921
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 60,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            128,
+            359,
+            1280,
+            757
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            676,
+            596,
+            1280,
+            957
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            0,
+            620,
+            380,
+            956
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 75,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            55,
+            360,
+            1280,
+            756
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            885,
+            592,
+            1280,
+            918
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            0,
+            610,
+            611,
+            940
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 90,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            60,
+            360,
+            1280,
+            743
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_blue_car",
+          "bbox": [
+            1216,
+            718,
+            1280,
+            893
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            0,
+            609,
+            930,
+            930
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 105,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            100,
+            356,
+            1280,
+            776
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            302,
+            610,
+            1280,
+            925
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 120,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            131,
+            356,
+            1280,
+            755
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            648,
+            590,
+            1280,
+            855
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "maroon_van",
+          "bbox": [
+            1090,
+            483,
+            1280,
+            656
+          ],
+          "label": "vehicle"
+        }
+      ]
+    },
+    {
+      "frame_index": 135,
+      "objects": [
+        {
+          "id": "coach",
+          "bbox": [
+            120,
+            358,
+            1280,
+            727
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "parked_red_car",
+          "bbox": [
+            885,
+            575,
+            1280,
+            807
+          ],
+          "label": "vehicle"
+        },
+        {
+          "id": "maroon_van",
+          "bbox": [
+            811,
+            468,
+            1280,
+            709
+          ],
+          "label": "vehicle"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+data/*
+!data/.gitkeep
+outputs/
+models/*.pt
+*.mp4

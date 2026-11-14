@@ -1,0 +1,9 @@
+# Lower detector resolution trades small-vehicle recall for CPU speed.
+extends: default.yaml
+detector:
+  image_size: 320
+  cpu_threads: 2
+geometry:
+  warm_start_max_nfev: 6
+  global_refit_interval: 60
+  fit_max_nfev: 15

@@ -1,0 +1,5 @@
+# Retain lost identities longer; does not draw absent vehicles.
+# Longer retention can incorrectly associate a new vehicle at an old location.
+extends: default.yaml
+tracker:
+  track_buffer: 120

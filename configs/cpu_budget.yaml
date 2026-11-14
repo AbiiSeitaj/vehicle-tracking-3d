@@ -1,0 +1,6 @@
+# More aggressive fitting budget; verify cuboid coverage alongside speed.
+extends: cpu_fast.yaml
+geometry:
+  warm_start_max_nfev: 2
+  global_refit_interval: 90
+  fit_max_nfev: 8
