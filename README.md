@@ -6,7 +6,7 @@ A Python pipeline that detects and tracks vehicles in a fixed-camera video and d
 
 *Example output. The boxes are approximate and get worse when vehicles overlap.*
 
-There's no camera calibration. The pipeline guesses the camera setup from the video itself (road lines or vehicle positions) and falls back to fixed assumptions when that isn't enough. The 3D boxes look right in the image, but they are not real-world measurements. One camera can't give you that.
+There's no camera calibration. The pipeline guesses the camera setup from the video itself (road lines or vehicle positions) and falls back to fixed assumptions when that isn't enough. 
 
 ## How it works
 
